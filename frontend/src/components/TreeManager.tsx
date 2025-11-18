@@ -41,12 +41,14 @@ export default function TreeManager() {
   useEffect(() => {
     loadTrees();
   }, []);
-  
+  //@ts-ignore
   const TreeView = ({ tree }) => {
+    //@ts-ignore
     const renderTree = (node) => {
       return {
         name: node.name,
         ...(node.children && node.children.length > 0
+          //@ts-ignore
           ? { children: node.children.map((child) => renderTree(child)) }
           : { data: node.data }),
       };
