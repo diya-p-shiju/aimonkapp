@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fastapi-neon"
+version = "0.1.0"
+description = ""
+authors = ["diya-p-shiju <diya.p.shiju@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "fastapi_neon", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.14"
+fastapi = ">=0.121.2,<0.122.0"
+uvicorn = { extras = ["standard"], version = ">=0.38.0,<0.39.0" }
+sqlmodel = ">=0.0.27,<0.0.28"
+psycopg = { extras = ["binary"], version = ">=3.2.12,<4.0.0" }
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

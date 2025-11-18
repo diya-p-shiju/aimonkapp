@@ -1,0 +1,62 @@
+# -------------------------
+# Global
+# -------------------------
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+
+# editor folders
+.vscode/
+.idea/
+
+# environment files
+.env
+.env.*.local
+
+# -------------------------
+# Node / Next.js (frontend)
+# -------------------------
+frontend/node_modules/
+frontend/.next/
+frontend/.turbo/
+frontend/.vercel/
+frontend/out/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.env.local
+frontend/.env.*.local
+
+# lock files (optional)
+# frontend/package-lock.json
+# frontend/yarn.lock
+
+# -------------------------
+# Python + Poetry (backend)
+# -------------------------
+backend/__pycache__/
+backend/*.pyc
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.ruff_cache/
+backend/.coverage
+backend/coverage.xml
+backend/.coverage.*
+
+# Poetry virtualenv (if inside project)
+backend/.venv/
+
+# If poetry stores venv in cache (default)
+# ignore all system-wide poetry venvs
+.cache/pypoetry/virtualenvs/
+
+# sqlite (if any)
+backend/*.db
+
+# -------------------------
+# GitHub Actions artifacts
+# -------------------------
+.github/workflows/*.log
